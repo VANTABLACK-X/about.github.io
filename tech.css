@@ -342,23 +342,7 @@ body{
 .about-cont p span{
     color: rgb(221, 221, 221);
 }
-@media only screen and (max-width: 700px){
-    nav {
-        position: fixed;
-        align-items: center;
-        top: 240px;
-        right: 20px; 
-    }
-    nav a i{
-        color: #ffffff;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav a i:hover{
-        color: white;
-        text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
-    }
+@media only screen and (max-width: 767px){
     .hand-shake i{
         position: absolute;
         color: rgb(102, 102, 102);
@@ -501,20 +485,6 @@ body{
     }
     .skill-top span{
         color: rgb(103, 0, 163);
-    }
-    .punk img{
-        position: absolute;
-        top: 1380px;
-        left: 163px;
-        height: 110px;
-        width: 168px;
-    }
-    .mac img{
-        position: absolute;
-        top: 1370px;
-        left: 150px;
-        height: 180px;
-        width: 190px;
     }
     .networking {
         position: absolute;
