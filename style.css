@@ -164,11 +164,11 @@ header{
         color: aliceblue;
         font-size: 13px;
     }
-    .contact {
+    .contact h2{
         position: absolute;
         top: 200vh;
         left: 25px;
-        color: aliceblue;
+        color: rgb(226, 38, 38);
         font-size: 13px;
     }
 }
