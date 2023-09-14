@@ -84,7 +84,7 @@ header{
     position: absolute;
     top: 180vh;
     left: 100px;
-    color: aliceblue;
+    color: rgb(8, 50, 87);
 }
 @media screen and (max-width: 768px){
     body{
