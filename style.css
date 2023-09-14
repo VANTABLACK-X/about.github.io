@@ -80,7 +80,7 @@ header{
     left: 100px;
     color: aliceblue;
 }
-.contact {
+.contact h2{
     position: absolute;
     top: 180vh;
     left: 100px;
