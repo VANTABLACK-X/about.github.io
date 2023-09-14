@@ -86,7 +86,7 @@ header{
     left: 100px;
     color: aliceblue;
 }
-@media only screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     body{
         display: flex;
         scroll-behavior: smooth;
