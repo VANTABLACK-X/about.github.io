@@ -86,7 +86,7 @@ header{
     left: 100px;
     color: aliceblue;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1100px){
     .title{
         position: absolute;
         top: 360px;
