@@ -86,3 +86,77 @@ header{
     left: 100px;
     color: aliceblue;
 }
+@media only screen and (max-width: 1080px){
+    .title{
+        position: absolute;
+        top: 360px;
+        left: 65px;
+        color: rgb(233, 233, 233);
+        font-size: 40px;
+    }
+    .mountain1{
+        position: absolute;
+        top: 20px;
+        left: -600px;
+        width: 1350px;
+        height: 100vh;
+    }
+    .mountain2{
+        position: absolute;
+        top: 320px;
+        right: -390px;
+        width: 565px;
+        height: 300px;
+    }
+    .mountain3{
+        position: absolute;
+        top: 185px;
+        right: -410px;
+        width: 902px;
+        height: 260px;
+    }
+    .sky{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 80vh;
+    }
+    .art {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        font-size: 16px;
+        color: #000000;
+        transform: translate(-50%, -50%);
+    }
+    .tech {
+        position: absolute;
+        top: 30px;
+        right: 60px;
+        font-size: 16px;
+        color: #000000;
+        transform: translate(-50%, -50%);
+    }
+    .home {
+        position: absolute;
+        top: 30px;
+        right: 115px;
+        font-size: 16px;
+        color: #000000;
+        transform: translate(-50%, -50%);
+    }
+    .about {
+        position: absolute;
+        top: 110vh;
+        left: 25px;
+        color: aliceblue;
+        font-size: 13px;
+    }
+    .contact {
+        position: absolute;
+        top: 200vh;
+        left: 25px;
+        color: aliceblue;
+        font-size: 13px;
+    }
+}
