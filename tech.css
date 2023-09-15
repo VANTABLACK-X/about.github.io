@@ -342,7 +342,7 @@ body{
 .about-cont p span{
     color: rgb(221, 221, 221);
 }
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 1085px){
     .art {
         position: absolute;
         top: 30px;
