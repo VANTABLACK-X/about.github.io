@@ -86,7 +86,7 @@ header{
     left: 100px;
     color: rgb(8, 50, 87);
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1090px){
     body{
         display: flex;
         scroll-behavior: smooth;
@@ -131,7 +131,7 @@ header{
         position: absolute;
         top: 0;
         width: 100%;
-        height: 280px;
+        height: 480px;
     }
     .art {
         position: absolute;
