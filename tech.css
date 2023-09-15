@@ -342,13 +342,30 @@ body{
 .about-cont p span{
     color: rgb(221, 221, 221);
 }
-@media only screen and (max-width: 1080px){
-    .hand-shake i{
+@media only screen and (max-width: 850px){
+    .art {
         position: absolute;
-        color: rgb(102, 102, 102);
-        font-size: 20px;
-        top: 273px;
-        left: 20px; 
+        top: 30px;
+        right: 15px;
+        font-size: 16px;
+        color: #ffffff;
+        transform: translate(-50%, -50%);
+    }
+    .tech {
+        position: absolute;
+        top: 30px;
+        right: 60px;
+        font-size: 16px;
+        color: #ffffff;
+        transform: translate(-50%, -50%);
+    }
+    .home {
+        position: absolute;
+        top: 30px;
+        right: 115px;
+        font-size: 16px;
+        color: #ffffff;
+        transform: translate(-50%, -50%);
     }
     .about {
         position: absolute;

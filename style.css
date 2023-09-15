@@ -95,7 +95,7 @@ header{
     }
     header{
         width: 100%;
-        height: 140vh;
+        height: 1300px;
         position: relative;
         overflow: hidden;
     }
@@ -115,7 +115,7 @@ header{
     }
     .mountain2{
         position: absolute;
-        top: 320px;
+        top: 380px;
         right: -390px;
         width: 565px;
         height: 300px;
@@ -131,7 +131,7 @@ header{
         position: absolute;
         top: 0;
         width: 100%;
-        height: 80vh;
+        height: 280px;
     }
     .art {
         position: absolute;
