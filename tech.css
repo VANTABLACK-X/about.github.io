@@ -370,7 +370,7 @@ body{
     .about {
         position: absolute;
         top: 495px;
-        left: 50px;
+        left: 100px;
     }
     .about h1{
         font-size: 20px;
