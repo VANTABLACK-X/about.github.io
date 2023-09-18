@@ -74,18 +74,6 @@ header{
     color: #000000;
     transform: translate(-50%, -50%);
 }
-.about {
-    position: absolute;
-    top: 120vh;
-    left: 100px;
-    color: aliceblue;
-}
-.contact h2{
-    position: absolute;
-    top: 180vh;
-    left: 100px;
-    color: rgb(8, 50, 87);
-}
 @media screen and (max-width: 1090px){
     body{
         display: flex;
