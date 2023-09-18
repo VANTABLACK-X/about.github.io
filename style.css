@@ -145,7 +145,6 @@ header{
     margin-right: 30px;
     margin-bottom: 20px;
     font-size: 17px;
-    font-weight: bold;
     color: rgb(172, 172, 172);
 }
 .about-cont p span{
@@ -308,9 +307,12 @@ header{
         margin-left: 60px;
         margin-right: 30px;
         margin-bottom: 20px;
-        font-size: 17px;
-        font-weight: bold;
+        font-size: 18px;
         color: rgb(172, 172, 172);
+    }
+    .reman {
+        color: rgb(172, 172, 172);
+        text-decoration: none;
     }
     .about-cont p span{
         color: rgb(221, 221, 221);
