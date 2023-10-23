@@ -16,6 +16,15 @@ header{
     position: relative;
     overflow: hidden;
 }
+.email-contact {
+    position: absolute;
+    top: 2000px;
+    margin: 20px;
+  }
+  #email-link {
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+  }
 .title{
     position: absolute;
     top: 480px;
