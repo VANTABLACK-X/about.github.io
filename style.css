@@ -313,8 +313,10 @@ header {
 
     .title {
         position: absolute;
+        text-align: center;
         top: 450px;
-        left: 95px;
+        left: 5%;
+        width: 90%;
         color: rgb(233, 233, 233);
         font-size: 40px;
     }
