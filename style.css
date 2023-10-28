@@ -196,7 +196,8 @@ header {
 .reman {
     color: rgb(172, 172, 172);
 }
-.about-end p{
+
+.about-end p {
     position: absolute;
     text-align: center;
     top: 1750px;
@@ -205,9 +206,11 @@ header {
     font-size: 35px;
     color: rgb(172, 172, 172);
 }
-.about-end p span{
+
+.about-end p span {
     color: rgb(255, 255, 255);
 }
+
 .down {
     position: absolute;
     text-align: center;
@@ -221,6 +224,7 @@ header {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes down {
     0% {
         transform: translate(0, 0px);
@@ -234,6 +238,7 @@ header {
         transform: translate(0, -0px);
     }
 }
+
 .contact {
     position: absolute;
     top: 2000px;
@@ -247,46 +252,50 @@ header {
     font-family: 'Tangerine', cursive;
     color: rgb(255, 255, 255);
 }
-.email-contact {
-    position: absolute;
-    top: 2100px;
-    margin: 20px;
-}
 
 #email-link {
     text-decoration: none;
-    font-size: 25px;
-    color: rgb(53, 53, 53);
-}
-.phone-number {
-    position: absolute;
-    top: 2100px;
-    left: 100px;
-    width: 150px;
-    height: 50px;
     color: rgb(53, 53, 53);
 }
 
-.phone-number :hover .number{
-    display: block;
-}
-.number{
-    display: none;
+.social-icons {
     position: absolute;
-    background-color: aliceblue;
-    color: #ffffff;
-    padding: 10px;
-    top: 2120px;
-    left: 100px;
+    text-align: center;
+    top: 2100px;
+    left: 5%;
+    width: 90%;
+    font-size: 40px;
 }
+
+.social-icons i {
+    color: rgb(73, 73, 73);
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.number {
+    position: absolute;
+    text-align: center;   
+    color: rgb(255, 255, 255);
+    top: 2210px;
+    left: 5%;
+    width: 90%;
+}
+.number p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+
 .end-line {
     position: absolute;
-    top: 2500px;
+    top: 2480px;
     left: 5%;
     width: 90%;
     height: 5px;
     background: rgb(0, 0, 0);
 }
+
 @media screen and (max-width: 1090px) {
     body {
         display: flex;
