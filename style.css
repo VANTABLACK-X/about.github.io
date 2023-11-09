@@ -205,6 +205,7 @@ header {
     width: 90%;
     font-size: 35px;
     color: rgb(172, 172, 172);
+
 }
 
 .about-end p span {
@@ -275,13 +276,14 @@ header {
 
 .number {
     position: absolute;
-    text-align: center;   
+    text-align: center;
     color: rgb(255, 255, 255);
     top: 2210px;
     left: 5%;
     width: 90%;
 }
-.number p{
+
+.number p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     margin: 20px;
@@ -487,6 +489,7 @@ header {
     .reman {
         color: rgb(172, 172, 172);
     }
+
     .about-end p {
         position: absolute;
         text-align: center;
@@ -496,10 +499,11 @@ header {
         font-size: 35px;
         color: rgb(172, 172, 172);
     }
-    
+
     .about-end p span {
         color: rgb(255, 255, 255);
     }
+
     .down {
         position: absolute;
         text-align: center;
@@ -513,20 +517,21 @@ header {
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
-    
+
     @keyframes down {
         0% {
             transform: translate(0, 0px);
         }
-    
+
         50% {
             transform: translate(0, 17px);
         }
-    
+
         100% {
             transform: translate(0, -0px);
         }
     }
+
     .contact {
         position: absolute;
         top: 3500px;
@@ -534,18 +539,18 @@ header {
         width: 100%;
         text-align: center;
     }
-    
+
     .contact p {
         font-size: 50px;
         font-family: 'Tangerine', cursive;
         color: rgb(255, 255, 255);
     }
-    
+
     #email-link {
         text-decoration: none;
         color: rgb(53, 53, 53);
     }
-    
+
     .social-icons {
         position: absolute;
         text-align: center;
@@ -554,27 +559,28 @@ header {
         width: 90%;
         font-size: 40px;
     }
-    
+
     .social-icons i {
         color: rgb(73, 73, 73);
         margin-top: 20px;
         margin-right: 20px;
     }
-    
+
     .number {
         position: absolute;
-        text-align: center;   
+        text-align: center;
         color: rgb(221, 221, 221);
         top: 3700px;
         left: 5%;
         width: 90%;
     }
-    .number p{
+
+    .number p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
         margin: 20px;
     }
-    
+
     .end-line {
         position: absolute;
         top: 3900px;
