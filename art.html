@@ -25,26 +25,39 @@
 </head>
 
 <body>
+    <div class="blob1"></div>
+    <div class="blob1"></div>
     <div class="title">
         <h1>hi</h1>
-        <img src="images/milkyway1.jpg" alt="">
     </div>
     <div class="section">
         <div class="content">
-            <h2>Section 1</h2>
+            <p>section 1</p>
             <p>Content for Section 1</p>
         </div>
     </div>
-    
-    <a href="art.html" class="artlink">
-        <div class="art">ART</div>
-    </a>
-    <a href="tech.html" class="techlink">
-        <div class="tech">TECH</div>
-    </a>
-    <a href="index.html" class="homelink">
-        <div class="home">ABOUT</div>
-    </a>
+
+
+    <div class="nav" data-aos="fade-down">
+        <p>VANTABLACK</p>
+        <div class="links" data-aos="zoom-in">
+            <a href="art.html" class="artlink">
+                <div class="art">ART</div>
+            </a>
+            <a href="tech.html" class="techlink">
+                <div class="tech">HOME</div>
+            </a>
+            <a href="index.html" class="homelink">
+                <div class="home">ABOUT</div>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1700,
+        })
+    </script>
     <script src="art.js"></script>
 </body>
 
