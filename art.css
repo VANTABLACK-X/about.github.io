@@ -13,12 +13,6 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-.blab1 {
-    position: absolute;
-    top: 150px;
-    left: 150px;
-}
-
 .nav {
     position: fixed;
     display: flex;
@@ -26,7 +20,7 @@ body {
     left: 1%;
     height: 50px;
     width: 98%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(12px);
     border-radius: 10px;
     box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.5);
@@ -47,8 +41,8 @@ body {
 .links {
     position: fixed;
     display: flex;
-    top: 14px;
-    font-size: 16px;
+    top: 13px;
+    font-size: 14px;
     right: 0px;
 }
 
@@ -56,19 +50,28 @@ body {
     text-decoration: none;
     text-align: center;
     overflow: hidden;
-    padding-top: 1.5px;
+    padding-top: 0.95px;
     margin-right: 20px;
     width: 100px;
     height: 22px;
     border-radius: 5px;
     box-shadow: -7px 7px 20px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     color: rgb(255, 255, 255);
+}
+
+.blob1 {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    height: 600px;
+    width: 600px;
 }
 
 .section {
     position: absolute;
-    top: 170px;
+    top: 570px;
     left: 5%;
     height: 600px;
     width: 90%;
@@ -90,7 +93,7 @@ body {
 @keyframes shimmy {
     0% {
         transform: skew(10deg, 8deg);
-        top: 400px;
+        top: 600px;
         left: 400px;
         height: 200px;
         width: 200px;
@@ -99,7 +102,7 @@ body {
 
     100% {
         transform: skew(0, 0);
-        top: 170px;
+        top: 570px;
         left: 5%;
         height: 600px;
         width: 90%;
@@ -118,6 +121,7 @@ body {
     top: 1500px;
     color: rgba(0, 0, 0);
 }
+
 @media screen and (max-width: 1090px) {
 
     body {
