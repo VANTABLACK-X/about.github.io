@@ -20,7 +20,7 @@ body {
     left: 1%;
     height: 50px;
     width: 98%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
     border-radius: 10px;
     box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.5);
@@ -58,17 +58,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.05);
     color: rgb(255, 255, 255);
-}
-
-.blob1 {
-    position: absolute;
-    top: 100px;
-    left: 400px;
-    height: 600px;
-    width: 600px;
-}
-
-.section {
+}.section {
     position: absolute;
     top: 570px;
     left: 5%;
@@ -86,10 +76,10 @@ body {
 
 .section.active {
     opacity: 1;
-    animation: shimmy 3s ease-out;
+    animation: section 3s ease-out;
 }
 
-@keyframes shimmy {
+@keyframes section {
     0% {
         transform: skew(10deg, 8deg);
         top: 600px;
@@ -108,128 +98,8 @@ body {
         border-radius: 10px;
     }
 }
-
 .content {
     padding: 20px;
     font-size: 26px;
     color: rgba(255, 255, 255);
-}
-
-.title h1{
-    position: absolute;
-    top: 1500px;
-    color: rgba(0, 0, 0);
-}
-
-@media screen and (max-width: 1090px) {
-
-    body {
-        display: flex;
-        scroll-behavior: smooth;
-        font-family: 'Belleza', sans-serif;
-        background-color: rgb(0, 0, 0);
-    }
-
-    .nav {
-        position: fixed;
-        top: 2%;
-        left: 3%;
-        height: 50px;
-        width: 94%;
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(12px);
-        border-radius: 10px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(12px);
-    }
-
-    .nav p {
-        position: fixed;
-        display: flex;
-        margin-left: 20px;
-        font-size: 16px;
-        top: 14px;
-        left: 0;
-    }
-
-    .links {
-        position: fixed;
-        display: flex;
-        top: 14px;
-        font-size: 13px;
-        right: 0px;
-    }
-
-    .links a {
-        text-decoration: none;
-        text-align: center;
-        padding-top: 4px;
-        margin-right: 15px;
-        width: 50px;
-        height: 22px;
-        border-radius: 5px;
-        box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        background: rgba(255, 255, 255, 0.05);
-        color: rgb(255, 255, 255);
-    }
-    .blob1 {
-        position: absolute;
-        top: 100px;
-        left: 40px;
-        height: 600px;
-        width: 300px;
-    }
-    .section {
-        position: absolute;
-        top: 270px;
-        left: 5%;
-        height: 700px;
-        width: 90%;
-        opacity: 0;
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(12px);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: 0.5s ease-out;
-    }
-
-    .section.active {
-        opacity: 1;
-        animation: shimmy 3s ease-out;
-    }
-
-    @keyframes shimmy {
-        0% {
-            transform: skew(10deg, 8deg);
-            top: 100px;
-            left: 100px;
-            height: 200px;
-            width: 200px;
-            border-radius: 10px;
-        }
-
-        100% {
-            transform: skew(0, 0);
-            top: 70px;
-            left: 5%;
-            height: 700px;
-            width: 90%;
-            border-radius: 10px;
-        }
-    }
-
-    .content {
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .title h1 {
-        position: absolute;
-        top: 1700px;
-        left: 200px;
-    }
-
 }
