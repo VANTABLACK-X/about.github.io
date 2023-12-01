@@ -49,7 +49,7 @@ body {
 .links a {
     text-decoration: none;
     text-align: center;
-    padding-top: 0.95px;
+    padding-top: 2px;
     margin-right: 20px;
     width: 100px;
     height: 22px;
@@ -60,7 +60,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.bg1 img{
+.bg1 img {
     position: absolute;
     top: 0;
     left: 0;
@@ -77,15 +77,34 @@ body {
 }
 
 @keyframes cube {
-    0%{
+    0% {
         transform: translate(0, 0px);
     }
-    50%{
+
+    50% {
         transform: translate(0, 10px);
     }
-    100%{
+
+    100% {
         transform: translate(0, 0px)
     }
+}
+
+.hero{
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    height: 420px;
+    width: 700px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.title p{
+    text-align: center;
+    font-size: 66px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: rgba(255, 255, 255);
 }
 
 .blob1 {
@@ -98,7 +117,7 @@ body {
 
 .section {
     position: absolute;
-    top: 570px;
+    top: 700px;
     left: 5%;
     height: 600px;
     width: 90%;
@@ -109,31 +128,22 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: perspective(2000px) rotateY(0deg);
     transition: 0.5s ease-out;
 }
 
 .section.active {
     opacity: 1;
-    animation: section 3s ease-out;
+    animation: section 5s ease-out;
 }
 
 @keyframes section {
     0% {
-        transform: skew(10deg, 8deg);
-        top: 600px;
-        left: 400px;
-        height: 200px;
-        width: 200px;
-        border-radius: 10px;
+        transform: perspective(6em) rotateY(2deg);
     }
 
     100% {
-        transform: skew(0, 0);
-        top: 570px;
-        left: 5%;
-        height: 600px;
-        width: 90%;
-        border-radius: 10px;
+        transform: perspective(2000px) rotateY(0deg);
     }
 }
 
@@ -143,7 +153,7 @@ body {
     color: rgba(255, 255, 255);
 }
 
-.title h1{
+.title h1 {
     position: absolute;
     top: 1500px;
     color: rgba(0, 0, 0);
@@ -201,16 +211,18 @@ body {
         background: rgba(255, 255, 255, 0.05);
         color: rgb(255, 255, 255);
     }
+
     .blob1 {
         position: absolute;
-        top: 100px;
+        top: 1100px;
         left: 40px;
         height: 600px;
         width: 300px;
     }
+
     .section {
         position: absolute;
-        top: 270px;
+        top: 800px;
         left: 5%;
         height: 700px;
         width: 90%;
@@ -221,31 +233,22 @@ body {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.1);
+        transform: perspective(2000px) rotateY(0deg);
         transition: 0.5s ease-out;
     }
 
     .section.active {
         opacity: 1;
-        animation: shimmy 3s ease-out;
+        animation: shimmy 5s ease-out;
     }
 
     @keyframes shimmy {
         0% {
-            transform: skew(10deg, 8deg);
-            top: 100px;
-            left: 100px;
-            height: 200px;
-            width: 200px;
-            border-radius: 10px;
+            transform: perspective(6em) rotateY(2deg);
         }
-
+    
         100% {
-            transform: skew(0, 0);
-            top: 70px;
-            left: 5%;
-            height: 700px;
-            width: 90%;
-            border-radius: 10px;
+            transform: perspective(2000px) rotateY(0deg);
         }
     }
 

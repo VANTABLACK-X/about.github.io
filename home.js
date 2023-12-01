@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkBoxesInView() {
         boxes.forEach((box) => {
             const rect = box.getBoundingClientRect();
-            const isInView = rect.top <= window.innerHeight * 0.75 && rect.bottom >= 0;
+            const isInView = rect.top <= window.innerHeight * 0.95 && rect.bottom >= 0;
 
             if (isInView) {
                 box.classList.add("active");
