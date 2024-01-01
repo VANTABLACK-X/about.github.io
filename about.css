@@ -66,6 +66,7 @@ header {
     background: rgba(255, 255, 255, 0.2);
     color: rgb(0, 0, 0);
 }
+
 .title {
     position: absolute;
     top: 480px;
@@ -171,15 +172,15 @@ header {
     z-index: 2;
 }
 
-.scroll-reveal p{
+.scroll-reveal p {
     font-size: 26px;
     line-height: 1.3;
     margin-inline: auto;
     margin-bottom: 30px;
 }
 
-.scroll-reveal span{
-    color: hsl(0 0% 100% / 0.2);
+.scroll-reveal span {
+    color: hsl(0 0% 100% / 0.25);
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
@@ -197,46 +198,6 @@ header {
     to {
         background-size: 100% 100%;
     }
-}
-
-.about-sec2 p {
-    position: absolute;
-    text-align: center;
-    top: 1230px;
-    left: 5%;
-    width: 90%;
-    font-size: 26px;
-    color: rgb(172, 172, 172);
-}
-
-.about-sec3 p {
-    position: absolute;
-    text-align: center;
-    top: 1350px;
-    left: 5%;
-    width: 90%;
-    font-size: 26px;
-    color: rgb(172, 172, 172);
-}
-
-.about-sec4 p {
-    position: absolute;
-    text-align: center;
-    top: 1440px;
-    left: 5%;
-    width: 90%;
-    font-size: 26px;
-    color: rgb(172, 172, 172);
-}
-
-.about-sec5 p {
-    position: absolute;
-    text-align: center;
-    top: 1550px;
-    left: 5%;
-    width: 90%;
-    font-size: 26px;
-    color: rgb(172, 172, 172);
 }
 
 .reman {
@@ -374,7 +335,7 @@ header {
         border: 1px solid rgba(255, 255, 255, 0.1);
         -webkit-backdrop-filter: blur(12px);
     }
-    
+
     .nav p {
         position: fixed;
         display: flex;
@@ -383,7 +344,7 @@ header {
         top: 14px;
         left: 0;
     }
-    
+
     .links {
         position: fixed;
         display: flex;
@@ -391,7 +352,7 @@ header {
         font-size: 14px;
         right: 0px;
     }
-    
+
     .links a {
         text-decoration: none;
         text-align: center;
@@ -502,54 +463,42 @@ header {
         color: rgb(255, 255, 255);
     }
 
-    .about-sec1 p {
+    .scroll-reveal {
         position: absolute;
-        text-align: center;
-        top: 1730px;
+        top: 200vh;
         left: 5%;
         width: 90%;
-        font-size: 24px;
-        color: rgb(172, 172, 172);
+        text-align: center;
+        padding-block: clamp(8rem, 25vh);
+        z-index: 2;
     }
 
-    .about-sec2 p {
-        position: absolute;
-        text-align: center;
-        top: 2050px;
-        left: 5%;
-        width: 90%;
+    .scroll-reveal p {
         font-size: 24px;
-        color: rgb(172, 172, 172);
+        line-height: 1.3;
+        margin-inline: auto;
+        margin-bottom: 30px;
     }
 
-    .about-sec3 p {
-        position: absolute;
-        text-align: center;
-        top: 2370px;
-        left: 5%;
-        width: 90%;
-        font-size: 24px;
-        color: rgb(172, 172, 172);
+    .scroll-reveal span {
+        color: hsl(0 0% 100% / 0.25);
+        background-clip: text;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-image: linear-gradient(90deg, white, white);
+        animation: scroll-reveal linear forwards;
+        animation-timeline: view();
     }
 
-    .about-sec4 p {
-        position: absolute;
-        text-align: center;
-        top: 2600px;
-        left: 5%;
-        width: 90%;
-        font-size: 24px;
-        color: rgb(172, 172, 172);
+    .scroll-reveal p span {
+        animation-range-start: cover 48vh;
+        animation-range-end: cover 70vh;
     }
 
-    .about-sec5 p {
-        position: absolute;
-        text-align: center;
-        top: 2880px;
-        left: 5%;
-        width: 90%;
-        font-size: 24px;
-        color: rgb(172, 172, 172);
+    @keyframes scroll-reveal {
+        to {
+            background-size: 100% 100%;
+        }
     }
 
     .reman {
