@@ -117,7 +117,7 @@ body {
 
 .section {
     position: absolute;
-    top: 700px;
+    top: 1700px;
     left: 5%;
     height: 600px;
     width: 90%;
@@ -132,11 +132,10 @@ body {
     transition: 0.5s ease-out;
 }
 
-.section.active {
+.section {
     opacity: 1;
     animation: section 5s ease-out;
 }
-
 @keyframes section {
     0% {
         transform: perspective(6em) rotateY(2deg);
@@ -152,11 +151,26 @@ body {
     font-size: 26px;
     color: rgba(255, 255, 255);
 }
-
-.title h1 {
+.text{
     position: absolute;
-    top: 1500px;
-    color: rgba(0, 0, 0);
+    top: 1400px;
+    width: 160px;
+    left: 200px;
+    overflow: hidden;
+    height: 35px;
+}
+
+.text h1{
+    animation: section1 1.5s ease-in-out;
+}
+@keyframes section1 {
+    0% {
+        transform: translate(0px, 100px) rotate(0.001deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0.001deg);
+    }
 }
 
 @media screen and (max-width: 1090px) {
