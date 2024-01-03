@@ -67,12 +67,28 @@ header {
     color: rgb(0, 0, 0);
 }
 
-.title {
+.title1 {
     position: absolute;
-    top: 480px;
-    left: 100px;
-    color: rgb(233, 233, 233);
-    font-size: 60px;
+    text-align: center;
+    overflow: hidden;
+    top: 462px;
+    left: 10%;
+    font-size: 66px;
+    color: rgb(255, 255, 255);
+    background: none;   
+}
+.title1 p {
+    animation: section1 1.5s ease-in-out;
+}
+
+@keyframes section1 {
+    0% {
+        transform: translate(0px, 100px) rotate(0.001deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0.001deg);
+    }
 }
 
 .mountain1 {
@@ -131,6 +147,11 @@ header {
     font-size: 35px;
 }
 
+.about-top p{
+    font-family: 'Belleza', sans-serif;
+
+}
+
 .about-top p span {
     color: rgb(255, 255, 255);
 }
@@ -173,6 +194,7 @@ header {
 }
 
 .scroll-reveal p {
+   
     font-size: 26px;
     line-height: 1.3;
     margin-inline: auto;
@@ -181,6 +203,7 @@ header {
 
 .scroll-reveal span {
     color: hsl(0 0% 100% / 0.25);
+    font-family: 'Roboto', sans-serif;
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
