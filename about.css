@@ -23,6 +23,7 @@ header {
 .nav {
     position: fixed;
     display: flex;
+    z-index: 5;
     top: 2%;
     left: 1%;
     height: 50px;
@@ -51,6 +52,8 @@ header {
     top: 13px;
     font-size: 14px;
     right: 0px;
+   
+    z-index: 6;
 }
 
 .links a {
@@ -69,16 +72,64 @@ header {
 
 .title1 {
     position: absolute;
-    text-align: center;
     overflow: hidden;
     top: 462px;
     left: 10%;
+    width: 80%;
     font-size: 66px;
     color: rgb(255, 255, 255);
-    background: none;   
 }
-.title1 p {
-    animation: section1 1.5s ease-in-out;
+
+#hypno{
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    opacity: .99;
+    background-color: rgb(0, 0, 0);
+    z-index: 50;
+}
+
+#arc{ 
+    margin-left: 70vh;
+    margin-top: 22vh;
+    width: 400px;
+    height: 400px;
+}
+
+#arc span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgb(255, 255, 255) transparent transparent rgb(255, 255, 255);
+    animation-name: spinit;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.7, 0, .3, 1);
+}
+
+@keyframes spinit {
+    0% {
+        transform: rotate(0);
+    }
+    49%{
+        transform: rotate(180deg);
+    }
+    51%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
 }
 
 @keyframes section1 {
@@ -190,7 +241,6 @@ header {
     width: 90%;
     text-align: center;
     padding-block: clamp(8rem, 25vh);
-    z-index: 2;
 }
 
 .scroll-reveal p {
@@ -390,16 +440,6 @@ header {
         color: rgb(0, 0, 0);
     }
 
-    .title {
-        position: absolute;
-        text-align: center;
-        top: 450px;
-        left: 5%;
-        width: 90%;
-        color: rgb(233, 233, 233);
-        font-size: 40px;
-    }
-
     .mountain1 {
         position: absolute;
         top: 20px;
@@ -431,9 +471,30 @@ header {
         height: 480px;
     }
 
+    .title1 {
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
+        top: 412px;
+        left: 5%;
+        width: 90%;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+    }
+    
+    @keyframes section1 {
+        0% {
+            transform: translate(0px, 100px) rotate(0.001deg);
+        }
+    
+        100% {
+            transform: translate(0px, 0px) rotate(0.001deg);
+        }
+    }
+
     .about {
         position: absolute;
-        top: 1330px;
+        top: 1300px;
         left: 0;
         width: 100%;
         text-align: center;
@@ -446,7 +507,7 @@ header {
 
     .user {
         position: absolute;
-        top: 1450px;
+        top: 1750px;
         height: 650px;
         left: -130px;
         font-size: 330px;
@@ -474,7 +535,7 @@ header {
     .about-top p {
         position: absolute;
         text-align: center;
-        top: 650px;
+        top: 600px;
         left: 5%;
         width: 90%;
         font-size: 26px;
@@ -497,10 +558,10 @@ header {
     }
 
     .scroll-reveal p {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.3;
         margin-inline: auto;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .scroll-reveal span {
@@ -514,8 +575,8 @@ header {
     }
 
     .scroll-reveal p span {
-        animation-range-start: cover 48vh;
-        animation-range-end: cover 70vh;
+        animation-range-start: cover 38vh;
+        animation-range-end: cover 60vh;
     }
 
     @keyframes scroll-reveal {

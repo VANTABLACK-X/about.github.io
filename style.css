@@ -100,8 +100,7 @@ body {
 }
 .title p {
     font-size: 66px;
-    color: rgb(0, 0, 0); 
-    animation: slideup 1.5s ease-in-out;
+    color: rgb(0, 0, 0);
 }
 
 .service {
